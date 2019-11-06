@@ -10,3 +10,6 @@ class TestBasics(unittest.TestCase):
     def test_badinput(self):
         result = rpn.calculate('5 3 -')
         self.assertEqual(2,result)
+    def test_carat(self):
+        result = rpn.calculate('3 3 ^')
+        self.assertEqual(9,result)
